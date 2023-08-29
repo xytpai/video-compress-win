@@ -27,7 +27,7 @@ def run():
     if folder_path is not None:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
-                if file.endswith(".mp4"):
+                if file.endswith(".mp4") and not file.endswith("_out.mp4"):
                     videofile = os.path.join(root, file)
                     videofile_out = videofile.replace('.mp4', '_out.mp4')
                     check_call("ffmpeg.exe -i {} -c:v libx264 -crf 23 -c:a aac -b:a 128k {}"\
