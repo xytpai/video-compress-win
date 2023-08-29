@@ -1,2 +1,1 @@
-for ffmpeg.exe
-download from https://www.gyan.dev/ffmpeg/builds/
+Download ffmpeg.exe from https://www.gyan.dev/ffmpeg/builds/
